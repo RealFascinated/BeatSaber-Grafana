@@ -24,8 +24,6 @@ async function fetchData() {
     console.log("Data Fetcher - Updated scoresaber metrics.")
 }
 
-fetchData();
-
 module.exports = {
     getData() {
         return playerData;
