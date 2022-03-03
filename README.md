@@ -38,7 +38,7 @@ Add the metrics to Prometheus (My config below)
 ```
 Add the dashboard to Grafana
 ```
-Import the dashboard using the provided `dash.json` file from the repo
+Import the dashboard using the provided dash.json file from the repo
 ```
 If all is good, it should just start working.
 
