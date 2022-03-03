@@ -1,0 +1,8 @@
+{
+    "port": 8084,
+    "scoresaberId": "76561198449412074",
+    "proxy": {
+        "enabled": false,
+        "url": "http://bangor375.herokuapp.com/"
+    }
+}

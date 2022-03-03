@@ -1,0 +1,12 @@
+{
+  "name": "beatsaber-grafana",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "node-fetch": "^2.6.1",
+    "prometheus-api-metrics": "^3.2.0"
+  }
+}
