@@ -25,9 +25,8 @@ npm i
 yarn
 ```
 Change the config
-```bash
-Update the config values in the config.json to specify your needs.
 ```
+Update the config values in the config.json to specify your needs.
 ```
 Load the program
 ```bash
@@ -36,7 +35,7 @@ node .
 pm2 start ./src/index.js
 ```
 Add the metrics to Prometheus (My config below)
-```bash
+```yml
 - job_name: "beatsaber"
     static_configs:
       - targets: ["<your machines ip>:8084"]
