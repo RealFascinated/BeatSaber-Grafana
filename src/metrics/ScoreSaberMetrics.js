@@ -39,6 +39,10 @@ const scoresaberReplaysWatched = new client.Gauge({
     name: 'scoresaber_replays_watched',
     help: 'Scoresaber replays watched'
 });
+const scoresaberTimeFetched = new client.Gauge({
+    name: 'scoresaber_time_fetched',
+    help: 'Scoresaber time fetched'
+});
 registry.registerMetric(scoresaberPP);
 registry.registerMetric(scoresaberRank);
 registry.registerMetric(scoresaberCountryRank);
@@ -48,6 +52,7 @@ registry.registerMetric(scoresaberAverageRankedAccuracy);
 registry.registerMetric(scoresaberTotalPlayCount);
 registry.registerMetric(scoresaberRankedPlayCount);
 registry.registerMetric(scoresaberReplaysWatched);
+registry.registerMetric(scoresaberTimeFetched);
 
 update()
 setInterval(async () => {
@@ -67,4 +72,5 @@ async function update() {
     scoresaberTotalPlayCount.set(data.total_play_count);
     scoresaberRankedPlayCount.set(data.ranked_play_count);
     scoresaberReplaysWatched.set(data.replays_watched);
+    scoresaberTimeFetched.set(data.time_fetched);
 }

@@ -24,6 +24,11 @@ npm i
 # or
 yarn
 ```
+Change the config
+```bash
+Update the config values in the config.json to specify your needs.
+```
+```
 Load the program
 ```bash
 node .

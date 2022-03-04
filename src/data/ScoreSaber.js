@@ -7,6 +7,7 @@ const scoresaberUrl = `https://scoresaber.com/api/player/${Config.scoresaberId}/
 const url = Config.proxy.enabled ? Config.proxy.url + scoresaberUrl : scoresaberUrl
 
 async function fetchData() {
+    const timeFetched = Date.now()
     const data = await fetch(url);
     const json = await data.json();
 
@@ -20,6 +21,7 @@ async function fetchData() {
         total_play_count:         json.scoreStats.totalPlayCount,
         ranked_play_count:        json.scoreStats.rankedPlayCount,
         replays_watched:          json.scoreStats.replaysWatched,
+        time_fetched: timeFetched
     };
     console.log("Data Fetcher - Updated scoresaber metrics.")
 }
